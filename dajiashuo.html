@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>吴鹏的Web前端工程师之路</title>
+	<meta charset="utf-8" />
+    <link   type="text/css" href="css/demo.css" rel="stylesheet" />
+    <link  type="text/css" href="css/Plcss/semantic.css" rel="stylesheet" />
+    <link  type="text/css" href="css/Plcss/zyComment.css" rel="stylesheet" />
+    <style type="text/css" media="print, screen">
+        label {
+            font-weight: bold;
+        }
+
+        a {
+            font-family: Microsoft YaHei;
+        }
+
+        #articleComment {
+            width: 600px;
+            height: 400px;
+            overflow: auto;
+            border: 1px solid red;
+        }
+    </style> 
+</head>
+<body>
+    <div id="top">
+    <div id="header">
+        <iframe width="100%" height="60" scrolling="no" frameborder="0" src="header.html"></iframe>
+     </div>
+    </div>g
+  <div id="articleComment">
+  </div>
+    <script type="text/javascript" src="js/PlJS/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/PlJS/zyComment.js"></script>
+    <script type="text/javascript">
+        $("#articleComment").zyComment({
+	"width":"355",
+	"height":"33",
+	"callback":function(comment){
+		console.info("填写内容返回值：");
+		console.info(comment);
+		// 添加新的评论
+		$("#articleComment").zyComment("setCommentAfter", { "id": 123, "name": "name", "content": "content", "time": "2014-04-14" });
+	}
+});
+    </script>
+    <iframe width="100%" height="140px" scrolling="no" frameborder="0" src="bottom.html"></iframe>
+</body>
+</html>

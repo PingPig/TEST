@@ -1,0 +1,12 @@
+﻿* {
+    margin:0px auto;
+    padding:0px;
+}
+#bottom {
+background-color:#4cb07b;
+height:140px;
+width:100%;
+}
+#bottom  p{
+    font-size:15px;
+}

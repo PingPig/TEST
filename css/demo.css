@@ -1,0 +1,23 @@
+﻿* {
+    margin:0px auto ;
+    padding:0px;
+}
+/*全局样式*/
+#header {
+    position:fixed;
+width:100%;
+height:60px;
+}
+#top {
+width:100%;
+height:60px;
+}
+#middle{
+    border:1px solid red;
+   width:500px;
+   height:1000px;
+}
+/*全局样式*/
+/*header*/
+
+/*header*/
